@@ -1,0 +1,16 @@
+a {
+  padding: 0.5rem;
+  border: solid;
+  border-radius: 0.5rem;
+  margin: 1rem 0.5rem;
+  color: slategray;
+  transition: color .3s;
+}
+
+a::before {
+  content: " - ";
+}
+
+a:hover {
+  color: blue;
+}

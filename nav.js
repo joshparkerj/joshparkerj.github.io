@@ -6,7 +6,7 @@ customElements.define('nav-bar', class extends HTMLElement {
 
     const template = document.createElement('template');
     const links = '<a href="index.html">joshparkerj</a><a href="userscripts.html">userscripts</a><a href="downloads.html">downloads</a>';
-    const pageRE = new RegExp(`<a href="${page}\.html">[^<]*</a>`);
+    const pageRE = new RegExp(`<a href="${page}\\.html">[^<]*</a>`);
 
     template.innerHTML = `<link rel="stylesheet" type="text/css" href="nav.css" />${links.replace(pageRE, '')}`;
     
